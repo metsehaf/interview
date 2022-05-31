@@ -8,7 +8,7 @@
 - Set a timer for 2 hours and complete as many of the following tasks as you can
   - You will not be assessed on the amount completed - there is more than you are expected to complete in this time
   - Try to complete a range of different kinds of tasks (style, tests, components, etc.)
-- When you complete the tasks push them to the new branch you created and create a Pull Request from your branch to main, this will be useful to see the changes more clearly 
+- When you complete the tasks push the changes to the new branch you created and create a Pull Request from this branch to main, this will be useful to see the changes more clearly 
 - Use the git CLI (not a GUI like sourcetree) to make commits, as this will trigger a pre-commit hook to auto-format the code
   - So, no need to worry about code formatting (spacing, new lines, etc.) while writing code as this will be done automatically
 - `BlogService` class provides a mock API to use
