@@ -17,4 +17,12 @@ export class PostsListComponent implements OnInit {
       this.posts = posts;
     });
   }
+
+  deletePost(id: any) {
+    this._blogService.deletePost(id).subscribe((success) => {
+      if (success) {
+        window.location.reload();
+      }
+    });
+  }
 }

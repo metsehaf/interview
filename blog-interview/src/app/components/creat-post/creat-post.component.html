@@ -1,0 +1,44 @@
+<section class="post-form">
+  <h1>create new posts</h1>
+  <div class="post-form__title">
+    <mat-form-field
+      class="l-title-form__control"
+      appearance="outline"
+      [ngClass]="{
+        'has--error mat-form-field-invalid': title.hasError('required')
+      }"
+    >
+      <label for="title">Title</label>
+      <input name="title" matInput type="text" [formControl]="title" />
+    </mat-form-field>
+  </div>
+  <div class="post-form__description">
+    <mat-form-field
+      class="l-description-form__control"
+      appearance="outline"
+      [ngClass]="{
+        'has--error mat-form-field-invalid': description.hasError('required')
+      }"
+    >
+      <label for="description">Description</label>
+
+      <textarea
+        id="w3review"
+        name="description"
+        rows="4"
+        cols="50"
+        [formControl]="description"
+      ></textarea>
+    </mat-form-field>
+  </div>
+  <div>
+    <button
+      class="submit-button"
+      mat-flat-button
+      color="primary"
+      (click)="submitPost()"
+    >
+      submit Post
+    </button>
+  </div>
+</section>

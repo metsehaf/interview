@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PostsListComponent } from './components/posts-list/posts-list.component';
+import { PostsCardComponent } from './components/post-card/post-card.component';
 import { PostFormComponent } from './components/post-form/post-form.component';
 import { MatCardModule } from '@angular/material/card';
 import { BlogService } from './services/blog-service';
@@ -12,6 +13,8 @@ import { PostDetailComponent } from './components/post-detail/post-detail.compon
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
 import { MatButtonModule } from '@angular/material/button';
+import { CreatPostComponent } from './components/creat-post/creat-post.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,6 +23,8 @@ import { MatButtonModule } from '@angular/material/button';
     PostFormComponent,
     PostDetailComponent,
     HeaderComponent,
+    PostsCardComponent,
+    CreatPostComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +33,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatCardModule,
     RouterModule,
     MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [BlogService],
   bootstrap: [AppComponent],

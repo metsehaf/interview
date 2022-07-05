@@ -1,0 +1,18 @@
+<div
+  *ngFor="let post of posts"
+  [routerLink]="['/posts/' + post.id]"
+  [routerLinkActive]="'active'"
+>
+  <mat-card class="post-card">
+    <mat-card-title>{{ post.title }}</mat-card-title>
+    <mat-card-content>{{ post.content }}</mat-card-content>
+    <button
+      class="submit-button"
+      mat-flat-button
+      color="primary"
+      (click)="deletePost(post.id)"
+    >
+      delete Post
+    </button>
+  </mat-card>
+</div>

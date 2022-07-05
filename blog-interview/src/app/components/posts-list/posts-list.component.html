@@ -1,10 +1,1 @@
-<div
-  *ngFor="let post of posts"
-  [routerLink]="['/posts/' + post.id]"
-  [routerLinkActive]="'active'"
->
-  <mat-card class="post-card">
-    <mat-card-title>{{ post.title }}</mat-card-title>
-    <mat-card-content>{{ post.content }}</mat-card-content>
-  </mat-card>
-</div>
+<app-posts-card [posts]="posts" (postId)="deletePost($event)"></app-posts-card>
